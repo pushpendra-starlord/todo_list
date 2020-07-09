@@ -22,10 +22,10 @@
     <div class="container mt-3">
         <h2>Add Task in the List</h2>  
         
-        <form>
+        <form id="addForm">
             <div class="row">
                 <div class="col-lg-7 col-md-7 col-sm-7">
-                    <input type="text" class="form-control" id="item">
+                    <input type="text" onkeyup="toggleButton(this, 'submit')" class="form-control" id="item">
                 </div>
                 <div class="col-lg-5 col-md-5 col-sm-5">
                     <input type="submit" class="btn btn-primary" id="submit" value="Submit" disabled>
@@ -35,7 +35,7 @@
 
         <h2 class="mt-5">Tasks</h2>
 
-        <form id="addForm">
+        <form>
             <ul class="list-group" id="items"></ul>
         </form>
     </div>
